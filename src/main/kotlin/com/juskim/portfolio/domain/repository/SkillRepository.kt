@@ -3,6 +3,7 @@ package com.juskim.portfolio.domain.repository
 import com.juskim.portfolio.domain.constant.SkillType
 import com.juskim.portfolio.domain.entity.Skill
 import org.springframework.data.jpa.repository.JpaRepository
+import java.util.*
 
 interface SkillRepository : JpaRepository<Skill, Long> {
 
