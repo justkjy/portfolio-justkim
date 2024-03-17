@@ -2,6 +2,7 @@ package com.juskim.portfolio.domain.repository
 
 import com.juskim.portfolio.domain.entity.Project
 import org.springframework.data.jpa.repository.JpaRepository
+import org.springframework.data.jpa.repository.Query
 import java.util.*
 
 interface ProjectRepository : JpaRepository<Project, Long> {
