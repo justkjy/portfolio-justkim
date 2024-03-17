@@ -1,5 +1,9 @@
 package com.juskim.portfolio.domain.repository
 
+import com.juskim.portfolio.domain.constant.SkillType
+import com.juskim.portfolio.domain.entity.Skill
+import org.springframework.data.jpa.repository.JpaRepository
+
 interface SkillRepository : JpaRepository<Skill, Long> {
 
     // select * from skill where is_active = :isActive

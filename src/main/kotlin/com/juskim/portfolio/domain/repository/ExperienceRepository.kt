@@ -1,6 +1,7 @@
 package com.juskim.portfolio.domain.repository
 
 import com.juskim.portfolio.domain.entity.Achievement
+import org.springframework.data.jpa.repository.Query
 
 interface ExperienceRepository : JpaRepository<Experience, Long> {
 

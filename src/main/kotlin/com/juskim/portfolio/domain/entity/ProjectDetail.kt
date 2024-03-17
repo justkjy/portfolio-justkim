@@ -1,5 +1,7 @@
 package com.juskim.portfolio.domain.entity
-import jakarta.persistence.MappedSuperclass
+import jakarta.persistence.*
+import jakarta.servlet.http.HttpServletRequest
+
 
 @Entity
 class ProjectDetail(content: String, url: String?, isActive: Boolean) : BaseEntity() {

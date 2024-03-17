@@ -1,5 +1,6 @@
 package com.juskim.portfolio.domain.entity
 import jakarta.persistence.MappedSuperclass
+import jakarta.persistence.*
 
 @Entity
 class Project(name: String,
