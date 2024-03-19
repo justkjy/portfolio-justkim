@@ -1,21 +1,15 @@
 package com.juskim.portfolio.domain.entity
 
-import jakarta.annotation.Generated
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
-import org.intellij.lang.annotations.Identifier
-import org.springframework.data.annotation.Id
+import jakarta.persistence.Id
 import java.time.LocalDate
 
-
 @Entity
-class Achievement(title: String,
-                  description: String,
-                  achievedDate: LocalDate?,
-                  host: String,
-                  isActive: Boolean) : BaseEntity() {
+class Achievement(title: String, description: String, achievedDate: LocalDate?, host: String, isActive: Boolean) : BaseEntity() {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "achievement_id")
@@ -30,4 +24,5 @@ class Achievement(title: String,
     var host: String = host
 
     var isActive: Boolean = isActive
+
 }

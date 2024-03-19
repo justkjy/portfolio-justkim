@@ -1,12 +1,13 @@
 package com.juskim.portfolio.domain.entity
 import com.juskim.portfolio.domain.constant.SkillType
 import jakarta.persistence.*
-import org.springframework.data.annotation.Id
+import jakarta.persistence.Id
 @Entity
 class Skill(
     name: String,
     type: String,
     isActive: Boolean) : BaseEntity() {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "skill_id")

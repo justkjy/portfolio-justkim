@@ -11,6 +11,7 @@ interface SkillRepository : JpaRepository<Skill, Long> {
     fun findAllByIsActive(isActive: Boolean): List<Skill>
 
     // select * from skill where lower(name) = lower(:name) and skill_type = :type
+    // 대소문자 가려서 비교 하지 않음
     fun findByNameIgnoreCaseAndType(name: String, type: SkillType): Optional<Skill>
 
 }
