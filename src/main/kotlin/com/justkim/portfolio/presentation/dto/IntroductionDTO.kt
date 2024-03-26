@@ -1,4 +1,11 @@
 package com.justkim.portfolio.presentation.dto
 
-class IntroductionDTO {
+import com.justkim.portfolio.domain.entity.Introduction
+
+class IntroductionDTO (
+    val content: String
+){
+    constructor(introduction: Introduction) : this(
+        content = introduction.content
+    )
 }
