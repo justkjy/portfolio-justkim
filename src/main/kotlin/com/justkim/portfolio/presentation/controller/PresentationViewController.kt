@@ -23,7 +23,7 @@ class PresentationViewController (
         val links = presentationService.getLinks()
         model.addAttribute("links", links)
 
-        return "presetation/index"
+        return "presentation/index"
     }
 
     @GetMapping("/resume")
@@ -39,6 +39,6 @@ class PresentationViewController (
     fun projects(model: Model): String {
         val projects = presentationService.getProjects()
         model.addAttribute("projects", projects)
-        return "presentation/proejcts"
+        return "presentation/projects"
     }
 }

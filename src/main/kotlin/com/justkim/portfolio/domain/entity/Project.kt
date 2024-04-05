@@ -4,7 +4,7 @@ import jakarta.persistence.*
 
 @Entity
 class Project(
-        name: String,
+      name: String,
       description: String,
       startYear: Int,
       startMonth: Int,
