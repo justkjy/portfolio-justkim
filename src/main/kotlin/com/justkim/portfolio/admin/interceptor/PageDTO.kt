@@ -1,0 +1,7 @@
+package com.justkim.portfolio.admin.interceptor
+
+data class PageDTO(
+    val name: String,
+    val url: String
+) {
+}
